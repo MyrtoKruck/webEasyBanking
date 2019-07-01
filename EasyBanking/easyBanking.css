@@ -1,5 +1,5 @@
 body {
-    background:#E5E5E5;
+    background: white;
     font-family: 'Roboto', sans-serif;
 }
 #slogan {
@@ -50,6 +50,9 @@ body {
 .navbar-nav > li {
     padding-left:40px;
     padding-right:40px;
+    white-space: nowrap;
 }
+
+
 
 
