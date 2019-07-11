@@ -79,3 +79,16 @@ float: left;
     padding-left:40px;
     padding-right:40px;
 }
+
+#bank{
+    top:50%;
+    margin-top: 50px;
+    margin-left: 45rem;
+    margin-right: auto;
+    position: relative;
+}
+#creditCard{
+    top:60%;
+    margin-left: 30rem;
+    margin-top: 10rem;
+}
