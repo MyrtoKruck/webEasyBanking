@@ -1,0 +1,81 @@
+body {
+    background:#E5E5E5;
+    font-family: 'Roboto', sans-serif;
+}
+#slogan {
+    position:absolute;
+    height: 100px;
+    top: 200px;
+    line-height: 50px;
+    word-wrap:break-word;
+    display: block;
+    padding-left: 20px;
+}
+span h1{
+    font-size: 42px;
+    font-weight: 700;
+}
+
+#overviewSpan{
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    top: 500px;
+    display: block;
+    background: #7A50D3;
+    padding: 20px 20px;
+    margin-left: 20px;
+}
+
+span h2{
+    font-size: 20px;
+    color: white;
+}
+
+span p{
+float: left;
+}
+
+.heading {
+    padding-top:50px;
+    padding-left: 6px;
+    padding-right: 50px
+
+}
+
+.navbardim {
+    padding: 4% 0 0 20%;
+}
+
+.color-block {
+    float: right;
+    position:static;
+    width: 93%;
+    height: 700px;
+    background-color: #EBFF00;
+}
+
+#mainNavbar {
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+#mainNavbar .nav-link {
+    color: black;
+}
+
+#mainNavbar .nav-link:hover {
+    color: rgb(122,80,211);
+}
+
+#mainNavbar .navbar-brand {
+    color: rgb(122,80,211);
+    font-size: 1.5rem;
+    letter-spacing: 0.505em;
+    line-height: 21px;
+}
+
+.navbar-nav > li {
+    padding-left:40px;
+    padding-right:40px;
+}
