@@ -92,3 +92,27 @@ float: left;
     margin-left: 30rem;
     margin-top: 10rem;
 }
+
+#start{
+    position:absolute;
+    display:block;
+    top: 750px;
+    margin-left: 60px;
+}
+
+div h3{
+    color:black;
+    font-weight: 700;
+    font-size: 40px;
+    margin:23px;
+}
+
+.square{
+    width: 150px;
+    height: 150px;
+    background-color:gray;
+    display:block;
+    float: right;
+    margin: 23px;
+}
+
