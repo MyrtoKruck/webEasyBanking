@@ -1,0 +1,234 @@
+body {
+    /* background:white; */
+    font-family: 'Roboto', sans-serif;
+    width:100%;
+    overflow-x:hidden;
+    height: 100%;
+    background: linear-gradient(to left, #EBFF00 82%, white 18% );
+}
+
+#slogan { 
+    position:absolute;
+    height: 100px;
+    top: 270px;
+    line-height: 50px;
+    display: block;
+    padding-left: 80px;
+}
+span h1{
+    font-size: 42px;
+    font-weight: 700;
+}
+
+#overviewSpan{
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    top: 500px;
+    display: block;
+    background: #7A50D3;
+    padding: 20px 20px;
+    margin-top: 90px;
+    margin-left: 120px;
+    transition: transform .2s; /* Animation */
+}
+#overviewSpan:hover {
+    cursor:pointer;
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+span h2{
+    font-size: 20px;
+    color: white;
+}
+
+span p{
+float: left;
+}
+
+.container {
+    min-height: 100%;
+}
+.heading {
+    padding-top:50px;
+    padding-left: 6px;
+    padding-right: 50px
+
+}
+
+.navbardim {
+    padding: 4% 0 0 20%;
+}
+
+/* .color-block {
+    float: right;
+    position:static;
+    width: 100%;
+    height: 50%;
+    background-color: #EBFF00;
+} */
+
+#mainNavbar {
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+#mainNavbar .nav-link {
+    color: black;
+}
+
+#mainNavbar .nav-link:hover {
+    color: rgb(122,80,211);
+}
+
+#mainNavbar .navbar-brand {
+    color: rgb(122,80,211);
+    font-size: 1.5rem;
+    letter-spacing: 0.505em;
+    line-height: 21px;
+}
+
+.navbar-nav > li {
+    padding-left:40px;
+    padding-right:40px;
+}
+
+#creditCard{
+    display:block;
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+    padding: 120px;
+}
+.responsive {
+    width: 50px;
+    height: 50px;
+}
+#start{
+    position:absolute;
+    display:block;
+    top: 750px;
+    margin-left: 60px;
+}
+
+.starter {
+    margin-top:800px;
+    margin-left: 1100px;
+    left: 90%;
+}
+.button {
+    display: inline-block;
+    background-color: #48C3F9;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 2rem;
+    padding: 0;
+    width: 130px;
+    transition: all 0.5s;
+}
+
+.button span {
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.button:hover {
+    background-color: #3eadde;
+}
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.fas {
+    margin-left:80px;
+}
+
+div h3{
+    color:black;
+    font-weight: 700;
+    font-size: 40px;
+    margin:23px;
+}
+
+.square{
+    width: 150px;
+    height: 150px;
+    background-color:gray;
+    display:block;
+    float: right;
+    margin: 23px;
+}
+
+
+a:hover, a:focus, a:active {
+    color: #999;
+    text-decoration: none;
+}
+
+a {
+    position: relative;
+    transition: color 0.3s,background-color 0.1s,padding 0.2s ease-in;
+    color: #000;
+}
+
+a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: rgba(174, 138, 253,0.3);
+    transform-origin: right top;
+    transform: scale(0, 1);
+    transition: color 0.4s,transform 0.2s ease-out;
+}
+
+a:hover::before, a:focus::before {
+    transform-origin: middle top;
+    transform: scale(1, 1);
+}
+
+.img-responsive {
+    width: 22rem;
+    height: 22rem;
+}
+
+/* sm */
+@media (min-width: 768px) {
+    .img-responsive {
+        width: 28rem;
+        height: 28rem;
+    }
+}
+/* md */
+@media (min-width: 992px) {
+    .img-responsive {
+        width: 35rem;
+        height: 35rem;
+    }
+}
+
+/* lg */
+@media (min-width: 1200px) {
+    .img-responsive {
+        width: 35rem;
+        height: 35rem;
+    }
+}
