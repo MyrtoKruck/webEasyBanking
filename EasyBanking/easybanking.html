@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EasyBanking</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="easyBanking.css">
+</head>
+<body>
+<nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark py-3">
+    <a href="#" class="navbar-brand"><img class="float-left" src="easybanking.png" width="250rem" height="102rem">
+    </a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navLinks">
+            <ul class="navbar-nav text-nowrap ml-auto">
+                <li class="nav-item current-item">
+                    <a href="" class="nav-link">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">WHY EASY BANKING?</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">ALL CARDS</a>
+                </li>
+            </ul>
+        </div>
+</nav>
+<span id="slogan"><h1 >Create Your <br>Personalized<br>Banking <br>Experience.</h1></span>
+<img class="img-responsive float-right d-none d-md-block" src="BankCreditCard.png" width="500rem" height="500rem">
+
+<a href="" id="overviewSpan"><h2>View <br>Credit Cards</br></h2></a>
+   
+    <section class="container-fluid px-0"></section>
+        <div id="start">
+            <h3>Let's Get Started...</h3>
+        </div>
+    </section>
+            <div class="question" id="question1">
+                <div class="container">
+                    <p>What is your age?</p>
+                    <div class="dropdown container-c">
+                        <div class="select">
+                            <span id="select-age">Select Age</span>
+                            <i class="fa fa-chevron-left"></i>
+                        </div>
+                        <input type="hidden" name="age">
+                        <ul class="dropdown-menu" id="age-range">
+                        </ul>
+                    </div>
+                 </div>
+                 
+                <!-- <label class="container">
+                    <select  name="sab"  class="req"  id="age-range" style="width:50px; height:30px;" autocomplete="off" required/>
+                        <option value="hide">--Age--</option>
+                    </select>
+                 </label> -->
+            </div>
+            <div class="question" id="question2">
+                <p>Are you working?</p>
+                <label class="container">
+                    Yes
+                    <input type="checkbox" id="mc2" name="question2yes" value="yes">
+                    <span class="checkmark"></span><br>
+                </label>
+                <label class="container">
+                    No
+                    <input type="checkbox" id="mc2" name="question2no" value="no">
+                    <span class="checkmark"></span><br>
+                </label>
+            </div>
+            <div class="question" id="question3">
+                <p>Do you have a connected checking account?</p>
+                <label class="container">
+                    Yes
+                    <input type="checkbox" id="mc3" name="question3yes" value="yes">
+                    <span class="checkmark"></span><br>
+                </label>
+                <label class="container">
+                    No
+                    <input type="checkbox" id="mc3" name="question3no" value="no">
+                    <span class="checkmark"></span><br>
+                </label>
+            </div>
+            <div class="question" id="question4">
+                <p>Do you want prepaid?</p>
+                <label class="container">
+                    Yes
+                    <input type="checkbox" id="mc4" name="question4yes" value="yes">
+                    <span class="checkmark"></span><br>
+                </label>
+                <label class="container">
+                    No
+                    <input type="checkbox" id="mc4" name="question4no" value="no">
+                    <span class="checkmark"></span><br>
+                </label>
+            </div>
+            <div class="question" id="question5">
+                <p>Do you want monthly payoffs?</p>
+                <label class="container">
+                    Yes
+                    <input type="checkbox" id="mc5" name="question5yes" value="yes">
+                    <span class="checkmark"></span><br>
+                </label>
+                <label class="container">
+                    No
+                    <input type="checkbox" id="mc5" name="question5no" value="no">
+                    <span class="checkmark"></span><br>
+                </label>
+            </div>
+            <div class="question" id="question6">
+                <p>Do you want additional services?</p>
+                <label class="container">
+                    Travel Insurance
+                    <input type="checkbox" id="mc6" name="travelInsurance" value="Travel Insurance">
+                    <span class="checkmark"></span><br>
+                </label>
+                <label class="container">
+                    Bonus Programmes
+                    <input type="checkbox" id="mc6" name="bonusProgrammes" value="Bonus Programmes">
+                    <span class="checkmark"></span><br>
+                </label>
+                <label class="container">
+                    Health Insurance
+                    <input type="checkbox" id="mc6" name="healthInsurance" value="Health Insurance">
+                    <span class="checkmark"></span><br>
+                </label>
+            </div>
+            <div class="question" id="question7">
+                <p>Do you want to withdraw money?</p>
+                <label class="container">
+                    Yes
+                    <input type="checkbox" id="mc7" name="question7yes" value="yes">
+                    <span class="checkmark"></span><br>
+                </label>
+                <label class="container">
+                    No
+                    <input type="checkbox" id="mc7" name="question7no" value="no">
+                    <span class="checkmark"></span><br>
+                </label>
+            </div>
+            <div class="question" id="question8">
+                <p>Do you want to withdraw money abroad?</p>
+                <label class="container">
+                    Yes
+                    <input type="checkbox" id="mc8" name="question8yes" value="yes">
+                    <span class="checkmark"></span><br>
+                </label>
+                <label class="container">
+                    No
+                    <input type="checkbox" id="mc8" name="question8no" value="no">
+                    <span class="checkmark"></span><br>
+                </label>
+            </div>
+            <div class="question" id="question9">
+                <p>Are you willing to pay annuity fees?</p>
+                <label class="container">
+                    less than 50€
+                    <input type="checkbox" id="mc9" name="lt50" value=">50">
+                    <span class="checkmark"></span><br>
+                </label>
+                <label class="container">
+                    300€
+                    <input type="checkbox" id="mc9" name="e300" value="300">
+                    <span class="checkmark"></span><br>
+                </label>
+                <label class="container">
+                    more than 600€
+                    <input type="checkbox" id="mc9" name="mt600" value=">600">
+                    <span class="checkmark"></span><br>
+                </label>
+            </div>
+            
+    <section class="container-fluid">
+        <div class="starter">
+            <button id="startButton" class="button float-right" style="vertical-align:middle">
+                <span style="font-size:1.4rem;text-transform: uppercase;">Start</span>
+            </button>
+            <button id="nextButton" class="proceedButton next float-right" style="vertical-align:middle">
+                <i class="fas fa-angle-right"></i>
+            </button>
+            <button id="prevButton" class="proceedButton prev float-right" style="vertical-align:middle; text-align:center;">
+                <i class="fas fa-angle-left"></i>
+            </button>
+            <div class="container grouper justify-content-center">
+                    <h2 class="submit" style="text-transform:uppercase;">Finished?</h2>
+                    <div class="center">
+                                <label class="label">
+                                  <input  class="label__checkbox" type="checkbox" />
+                                  <span class="label__text">
+                                    <span class="label__check">
+                                      <i class="fa fa-check icon"></i>
+                                    </span>
+                                  </span>
+                                </label>
+                              </div>
+            </div>
+           <!--  <div id="foo">0</div>
+            <progress id="progress" max="100" value="0" ></progress> Fortschrittsbalken -->
+        </div>
+    </section>
+    
+    
+            
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="appEasy.js"></script>
+    </body>
+</html>
