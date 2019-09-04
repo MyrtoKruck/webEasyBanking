@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EasyBanking</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="easyBanking.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+</head>
+<body>
+<nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark py-3">
+    <a href="#" class="navbar-brand"><img class="float-left" src="easybanking.png" width="250rem" height="102rem">
+    </a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navLinks">
+            <ul class="navbar-nav text-nowrap ml-auto">
+                <li class="nav-item current-item">
+                    <a href="" class="nav-link">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">WHY EASY BANKING?</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">ALL CARDS</a>
+                </li>
+            </ul>
+        </div>
+</nav>
+<!-- <div class="container-fluid">
+    <div class="row justify-content-end">
+        <div class="col-sm-auto my-col">
+            <h1>hi</h1>
+        </div>
+        <div class="col-sm-auto my-col">
+            <h1>hello</h1>
+        </div>
+    </div>
+</div> -->
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-xs-12 col-md-8">
+            <span id="slogan"><h1>Create Your <br>Personalized<br>Banking <br>Experience.</h1></span>
+            <a href="" id="overviewSpan"><h2>View <br>Credit Cards</br></h2></a>
+        </div>
+
+        <div class="col-md-4 d-none d-md-block" style="padding-right:0;">
+            <img class="img-responsive float-right" src="BankCreditCard.png" width="500rem" height="500rem">
+        </div>
+    </div>
+    
+    <div class="row justify-content-center">
+
+        <div class="col-md-auto" style="padding:0;" id="col1">
+            <h3 id="letsstart">Let's Get Started<span id="points"></span></h3>
+                 <div id="arrows1" class="arrows d-none d-md-block" style="animation-duration:0.5s">
+                    <img id="arr" src="chevron.png" width="200rem" height="160rem">
+                    <img id="arr" src="chevron.png" width="200rem" height="160rem">
+                    <img id="arr" src="chevron.png" width="200rem" height="160rem">
+                </div>
+        </div>
+        <div class="col-8 col-sm-8 col-md-auto ml-auto" id="start" style="padding:0;">
+            <button id="startButton" class="button">
+                <span style="font-size:1.4rem;text-transform: uppercase;">Start</span>
+            </button>
+            <div class="col-md d-none px-5" id="progressCol">
+                <div class="showProgress text-center">
+                    <p id="progressC"><span id="pcounter" value="0">0</span>/9</p>
+                    <div id="progressBar">
+                        <div class="progress">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="question" id="question1" data-width="11">
+                    <div class="container-select" style="padding-bottom:2rem;">
+                        <p>What is your age?</p>
+                        <div class="dropdown container-c">
+                            <div class="select">
+                                <span id="select-age">Select Age</span>
+                                <i class="fa fa-chevron-left"></i>
+                            </div>
+                            <input type="hidden" name="age">
+                            <ul class="dropdown-menu" id="age-range">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="question" id="question2" data-width="22">
+                    <p>Are you working?</p>
+                    <div class="options">
+                        <label class="container-select">
+                            Yes
+                            <input type="checkbox" id="mc2" name="question2yes" value="yes">
+                            <span class="checkmark"></span><br>
+                        </label>
+                        <label class="container-select">
+                            No
+                            <input type="checkbox" id="mc2" name="question2no" value="no">
+                            <span class="checkmark"></span><br>
+                        </label>
+                    </div>
+                </div>
+                <div class="question" id="question3" data-width="33">
+                    <p>Do you have a connected checking account?</p>
+                    <label class="container-select">
+                        Yes
+                        <input type="checkbox" id="mc3" name="question3yes" value="yes">
+                        <span class="checkmark"></span><br>
+                    </label>
+                    <label class="container-select">
+                        No
+                        <input type="checkbox" id="mc3" name="question3no" value="no">
+                        <span class="checkmark"></span><br>
+                    </label>
+                </div>
+                <div class="question" id="question4" data-width="55">
+                    <p>Do you want free payment abroad?</p>
+                    <label class="container-select">
+                        Yes
+                        <input type="checkbox" id="mc4" name="question4yes" value="yes">
+                        <span class="checkmark"></span><br>
+                    </label>
+                    <label class="container-select">
+                        No
+                        <input type="checkbox" id="mc4" name="question4no" value="no">
+                        <span class="checkmark"></span><br>
+                    </label>
+                </div>
+                <div class="question" id="question5" data-width="55">
+                    <p>In which area?</p>
+                    <label class="container-select">
+                        Eurozone
+                        <input type="checkbox" id="mc5" name="question6eurozone" value="eurozone">
+                        <span class="checkmark"></span><br>
+                    </label>
+                    <label class="container-select">
+                        Worldwide
+                        <input type="checkbox" id="mc5" name="question7worldwide" value="worldwide">
+                        <span class="checkmark"></span><br>
+                    </label>
+                </div>
+                <div class="question" id="question6" data-width="66">
+                    <p>Any additional payment options?</p>
+                    <label class="container-select">
+                        Google Pay
+                        <input type="checkbox" id="mc6" name="googlePay" value="Google Pay">
+                        <span class="checkmark"></span><br>
+                    </label>
+                    <label class="container-select">
+                        Apple Pay
+                        <input type="checkbox" id="mc6" name="applePay" value="Apple Pay">
+                        <span class="checkmark"></span><br>
+                    </label>
+                    <label class="container-select">
+                        Mobile Pay
+                        <input type="checkbox" id="mc6" name="mobilePay" value=" Mobile Pay">
+                        <span class="checkmark"></span><br>
+                    </label>
+                </div>
+                <div class="question" id="question7" data-width="77">
+                    <p>Do you want to withdraw money?</p>
+                    <label class="container-select">
+                        Yes
+                        <input type="checkbox" id="mc7" name="question7yes" value="yes">
+                        <span class="checkmark"></span><br>
+                    </label>
+                    <label class="container-select">
+                        No
+                        <input type="checkbox" id="mc7" name="question7no" value="no">
+                        <span class="checkmark"></span><br>
+                    </label>
+                </div>
+                <div class="question" id="question8" data-width="88">
+                    <p>Do you want to withdraw money abroad?</p>
+                    <label class="container-select">
+                        Yes
+                        <input type="checkbox" id="mc8" name="question8yes" value="yes">
+                        <span class="checkmark"></span><br>
+                    </label>
+                    <label class="container-select">
+                        No
+                        <input type="checkbox" id="mc8" name="question8no" value="no">
+                        <span class="checkmark"></span><br>
+                    </label>
+                </div>
+                <div class="question" id="question9" data-width="100">
+                    <p>Are you willing to pay annuity fees?</p>
+                    <label class="container-select">
+                        Yes
+                        <input type="checkbox" id="mc9" name="lt50" value=">50">
+                        <span class="checkmark"></span><br>
+                    </label>
+                    <label class="container-select">
+                        No
+                        <input type="checkbox" id="mc9" name="e300" value="300">
+                        <span class="checkmark"></span><br>
+                    </label>
+                </div>
+            </div>
+            <div class="col col-md-auto d-none" id="proceeds" style="border:2px solid blue;">
+                <div class="col ml-auto px-5" style="padding-bottom:7em;">
+                    <button id="prevButton" class="proceedButton prev" style="vertical-align:middle; text-align:center;">
+                        <i class="fas fa-angle-left"></i>
+                    </button>
+                    <button id="nextButton" class="proceedButton next float-right" style="vertical-align:middle">
+                        <i class="fas fa-angle-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+</div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="appEasy.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    </body>
+</html>
