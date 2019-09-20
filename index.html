@@ -105,6 +105,16 @@
             text-align:center;
             margin: 1.5em 0em 0em 0em;
         }
+        .resultpage{
+           color: white;
+            align-items:center;
+            text-align:center;
+            margin: 1.5em 0em 0em 0em;
+            display: block;
+            background: #7A50D3;
+            padding: 20px 20px;
+            transition: transform .2s
+        }
 
 
         #letsstart {
@@ -915,6 +925,12 @@
                         <span class="checkmark"></span><br>
                     </label>
                 </div>
+                <div class="resultpage" id="resultpage" data-width="100">
+                    <p style="text-decoration: underline">Well done! Let's check results:  </p>
+
+                    
+
+                </div>
             </div>
             <div class="col col-md-auto d-none" id="proceeds">
                 <div class="col ml-auto px-5" style="padding-bottom:7em;">
@@ -948,6 +964,7 @@
         createAgeRange();
         $(".grouper").hide();
         $(".question").hide();
+        $(".resultpage").hide();
         $("#progressCol").hide();
         $(document).ready(function(){
             var typed = new Typed("#points", {
@@ -1002,7 +1019,18 @@
                     let secondCard = data[1]
                     let thirdCard = data[2]
 
-                    alert(`Your best card is ${firstCard.name}.\nThe second best card is ${secondCard.name}.\nThe third best card is ${thirdCard.name}.`)
+                    $("#resultpage").fadeIn(function(){
+                        var resultpage = document.getElementById("resultpage")
+                        resultpage.innerHTML += `Your best card is ${firstCard.name}!<br><br>`
+                        resultpage.innerHTML += `\nYou can also go for ${secondCard.name}.<br><br>`
+                        resultpage.innerHTML +=`\nOr how about ${thirdCard.name}?`
+                    
+                        }
+                        
+                    )
+                    
+                    
+        
                 },
                 error: (request, status, error) => {
                     console.log(request, status, error)
